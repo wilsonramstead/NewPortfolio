@@ -2,7 +2,92 @@
 <div class="wrapper">
     <h2 class="displayHeader">My Personal Projects</h2>
     <div class="section">
+        <h2 class="sectionTitle">Previous Portfolio Website</h2>
+        <hr>
+        <div class="carousel">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/previousWebsite/home.png" alt="previous website pic 1">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/previousWebsite/whatIDo.png" alt="previous website pic 2">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/previousWebsite/tech.png" alt="previous website pic 3">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/previousWebsite/contact.png" alt="previous website pic 4">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class="descriptionBox">
+            <ul>
+                <li><h4 (click)="showInfo('description')">Description</h4></li>
+                |
+                <li><h4 (click)="showInfo('tech')">Tech</h4></li>
+            </ul>
+            <hr>
+            <p *ngIf="infoToShow === 'description'">Most recently coded project. Was a cool website with many moving pieces. Decided to take down due to instability, many moving pieces in the backend caused shaky appearance/connectivity.</p>
+            <div *ngIf="infoToShow === 'tech'" class="tech">
+                <p><strong style="color: black;">Front End: </strong> Html, Css, Javascript, Angular, Bootstrap</p>
+                <p><strong style="color: black;">Back End: </strong> Node.js, Express.js</p>
+                <p><strong style="color: black;">Database: </strong> No database</p>       
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="sectionTitle">Goal Tracker</h2>
+        <hr>
+        <div class="carousel">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/goalTracker/gtGoalsPage.png" alt="goal tracker pic 1">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/goalTracker/gtNewGoal.png" alt="goal tracker pic 2">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/goalTracker/gtCalendar1.png" alt="goal tracker pic 3">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/goalTracker/gtCalendar2.png" alt="goal tracker pic 4">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class="descriptionBox">
+            <ul>
+                <li><h4 (click)="showInfo('description')">Description</h4></li>
+                |
+                <li><h4 (click)="showInfo('tech')">Tech</h4></li>
+            </ul>
+            <hr>
+            <p *ngIf="infoToShow === 'description'">Website originally created for real personal use, and to save paper... But also as a way to further my experience with front-end styling and animations. Advanced backend logic applied through unique functions, from auto updating unassigned days to figuring out the specefic day of week per each month day - dynamically.</p>
+            <div *ngIf="infoToShow === 'tech'" class="tech">
+                <p><strong style="color: black;">Front End: </strong> Html, Css, Javascript, Angular, jQuery, Bootstrap</p>
+                <p><strong style="color: black;">Back End: </strong> Node.js, Express.js</p>
+                <p><strong style="color: black;">Database: </strong> MongoDB</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
         <h2 class="sectionTitle">The Wall</h2>
+        <hr>
         <div class="carousel">
             <ngb-carousel>
                 <ng-template ngbSlide>
@@ -56,13 +141,5 @@
                 <p><strong style="color: black;">Database: </strong> MySQL</p>
             </div>
         </div>
-    </div>
-    <div class="section">
-        <h2 class="sectionTitle">Goal Tracker</h2>
-
-    </div>
-    <div class="section">
-        <h2 class="sectionTitle">Jumpman</h2>
-
     </div>
 </div>
