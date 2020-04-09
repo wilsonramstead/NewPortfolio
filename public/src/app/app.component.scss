@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+// .column {
+//     height: 75.6%;
+//     width: 3%;
+//     border-right: 3px solid black;
+//     display: inline-block;
+//     vertical-align: top;
+// }
+// .columnRight {
+//     height: 75.6%;
+//     width: 3%;
+//     border-left: 3px solid black;
+//     display: inline-block;
+// }
+.mainWrapper {
+    background: #585858;
+    height: 100vh;
+    width: 100%;
+    // border: 5px solid rgb(197, 197, 197);
+    
+    .innerWrapper {
+        height: 100%;
+        width: 98%;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .mainHeader {
+        height: 150px;
+        width: 94%;
+        margin: 0px auto;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        font-weight: 300;
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 6px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    .fullWidthHR {
+        height: 3px;
+        background: black;
+    }
+    .navbar {
+        height: 50px;
+        width: 100%;
+        // background: rgba($color: #313131, $alpha: .5);
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+
+        ul {
+            list-style: none;
+            text-align: center;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            li {
+                display: inline-block;
+                margin: 8px 15px;
+            }
+            li:hover {
+                cursor: pointer;
+            }
+            .activePage {
+                color: pink;
+            }
+            .activePage:hover {
+                cursor: default;
+            }
+        }
+    }
+
+    .displayContainer {
+        height: 75%;
+        width: 100%;
+        overflow: auto;
+        display: inline-block;
+        vertical-align: top;
+        // background: blue;
+    }
+}

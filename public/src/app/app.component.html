@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="mainWrapper">
+    <div class="innerWrapper">
+        <div class="mainHeader coolBackground">
+        <h1>Wilson Ramstead</h1>
+        <hr style="height: 1px; background:white; width: 28%; margin: 0px auto;">
+        <h3>Sofware Engineer</h3>
+        <h3>Full Stack Web Developer</h3>
+        </div>
+        <!-- <hr class="fullWidthHR"> -->
+        <div class="navbar coolBackground">
+        <ul>
+            <li *ngIf="activePage != 'aboutMe'" (click)="changePage('aboutMe')">About Me</li>
+            <li *ngIf="activePage === 'aboutMe'" class="activePage">About Me</li>
+
+            <li *ngIf="activePage != 'whatIDo'" (click)="changePage('whatIDo')">What I Do</li>
+            <li *ngIf="activePage === 'whatIDo'" class="activePage">What I Do</li>
+
+            <li *ngIf="activePage != 'portfolio'" (click)="changePage('portfolio')">Portfolio</li>
+            <li *ngIf="activePage === 'portfolio'" class="activePage">Portfolio</li>
+
+            <li *ngIf="activePage != 'contact'" (click)="changePage('contact')">Contact</li>
+            <li *ngIf="activePage === 'contact'" class="activePage">Contact</li>
+        </ul>
+        </div>
+        <!-- <div class="column coolBackground2"></div> -->
+        <div class="displayContainer">
+            <app-about-me *ngIf="activePage === 'aboutMe'"></app-about-me>
+            <app-what-ido *ngIf="activePage === 'whatIDo'"></app-what-ido>
+
+
+            <app-contact *ngIf="activePage === 'contact'"></app-contact>
+            <app-portfolio *ngIf="activePage === 'portfolio'"></app-portfolio>
+        </div>
+        <!-- <div class="columnRight coolBackground2"></div> -->
+
+    </div>
+</div>
+
+<router-outlet></router-outlet>

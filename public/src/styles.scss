@@ -1,0 +1,24 @@
+
+@import "~bootstrap/scss/bootstrap";
+
+.coolBackground {
+    background: linear-gradient(-45deg, #b2c7ff, #80a0fa, #3e66d3);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+}
+.coolBackground2 {
+    background: linear-gradient(-45deg, #ffffff, #8b8b8b, #000000);
+    background-size: 200% 200%;
+    animation: gradientBG 20s ease infinite;
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

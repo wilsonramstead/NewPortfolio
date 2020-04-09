@@ -1,0 +1,127 @@
+
+.intro {
+
+    // border-bottom: 3px solid black;
+    overflow: auto;
+    img {
+        width: 300px;
+        // margin: 2% 10%;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 3%;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 25%;
+    }
+    .introText {
+        width: 65%;
+        height: 300px;
+        margin-top: 2%;
+        // background: silver;
+        display: inline-block;
+        vertical-align: top;
+
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 26px;
+            color: white;
+        }
+        p {
+            font-family: 'Noto Serif', serif;
+            font-size: 22px;
+            color: white;
+        }
+    }
+    .resume {
+        margin: 0px auto;
+        text-align: center;
+    }
+}
+
+
+.aboutMeText {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    line-height: 2;
+    text-align: left;
+    margin-left: 5%;
+}
+.nestedHeader {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 5%;
+    text-align: left;
+}
+.jobTitle {
+    list-style-type: square;
+    text-align: left;
+    margin-left: 5%;
+    color: white;
+    font-weight: bold;
+}
+.aboutMeText .link {
+    color: #007bfe;
+}
+.aboutMeText .link:hover {
+    color: #005bbd;
+    text-decoration: underline;
+}
+.githubLink {
+    color: #ff784f;
+}
+.REheader {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:480px) {
+    .aboutMeText {
+        font-size: 16px;
+    }
+    .labelOne {
+        text-align: center;
+    }
+    .date {
+        display: block;
+        text-align: left;
+    }
+    .miniHr {
+        width: 50%;
+    }
+    .githubLink {
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (min-width:481px) {
+    .aboutMeText {
+        font-size: 18px;
+    }
+    .labelOne {
+        text-align: left;
+    }
+    .leftLarge {
+        text-align: left;
+    }
+    .date {
+        float: right;
+        margin-right: 10%;
+    }
+    .miniHr {
+        display: none;
+    }
+    .githubLink {
+        display: inline-block;
+    }
+    .releventLabel {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .info {
+        font-size: 16px;
+    }
+    .leftLarge {
+        text-align: left;
+    }
+}

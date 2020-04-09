@@ -1,0 +1,68 @@
+
+<div class="wrapper">
+    <h2 class="displayHeader">My Personal Projects</h2>
+    <div class="section">
+        <h2 class="sectionTitle">The Wall</h2>
+        <div class="carousel">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/theWall/theWallMain.png" alt="the wall pic 1">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/theWall/theWallMainFeed.png" alt="the wall pic 1">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/theWall/theWallAccount.png" alt="the wall pic 3">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/theWall/theWallConvo.png" alt="the wall pic 4">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/theWall/theWallDM.png" alt="the wall pic 5">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/theWall/theWallGroup.png" alt="the wall pic 6">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper slide">
+                        <img src="../assets/projectPics/theWall/theWallGroupFeed.png" alt="the wall pic 7">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class="descriptionBox">
+            <ul>
+                <li><h4 (click)="showInfo('description')">Description</h4></li>
+                |
+                <li><h4 (click)="showInfo('tech')">Tech</h4></li>
+            </ul>
+            <hr>
+            <p *ngIf="infoToShow === 'description'">A website where users can register an account and create posts to a public wall. Users can comment on other users posts, and visit their customized account page. Users have a network feature to list all users they are and are not connected to. Users can have private direct message conversations with other users, and create a private wall with a group of their connections.</p>
+            <div *ngIf="infoToShow === 'tech'" class="tech">
+                <p><strong style="color: black;">Front End: </strong> Html, Css, Javascript, jQuery, Bootstrap</p>
+                <p><strong style="color: black;">Back End: </strong> Asp.Net Core, Entity Framework</p>
+                <p><strong style="color: black;">Database: </strong> MySQL</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="sectionTitle">Goal Tracker</h2>
+
+    </div>
+    <div class="section">
+        <h2 class="sectionTitle">Jumpman</h2>
+
+    </div>
+</div>

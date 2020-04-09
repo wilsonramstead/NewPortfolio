@@ -1,0 +1,106 @@
+
+.contactWrapper {
+    width: 100%;
+    height: 100%;
+    // background: repeating-radial-gradient(
+    //     circle,
+    //     purple,
+    //     purple 10px,
+    //     #4b026f 10px, 
+    //     #4b026f 20px
+    //   );
+    // background: linear-gradient(45deg, black 0%, black 26%, transparent 26%), linear-gradient(-45deg, black 0%, black 27%, transparent 27%);
+}
+
+.module {
+    background: white;
+    border: 1px solid #ccc;
+    margin: 3%;
+    > h2 {
+      padding: 1rem;
+      margin: 0 0 0.5rem 0;
+    }
+    > p {
+      padding: 0 1rem;
+    }
+  }
+  
+  .stripe-7 {
+    color: white;
+    background: repeating-radial-gradient(
+      circle,
+      purple,
+      purple 10px,
+      #4b026f 10px, 
+      #4b026f 20px
+    );
+  }
+.displayHeader {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+.icons {
+    text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    .icons img {
+        width: 50%;
+        margin: 20px auto;
+        border-radius: 50px;
+        border: 8px solid white;
+        background-color: rgba(190, 190, 190,.5);
+        display: block;
+    }
+    .icons img:nth-child(1) {
+        margin-top: 50px;
+    }
+    .icons img:nth-child(3) {
+        filter: grayscale(100%);
+    }
+    .block:nth-child(3) {
+        filter: grayscale(100%) contrast(150%);
+    }
+    .icons p {
+        margin-bottom: 80px;
+        color: white;
+        font-size: 26px;
+        font-family: 'Libre Baskerville', serif;
+    } 
+}
+@media only screen and (min-width: 481px) {
+    .third {
+        display: inline-block;
+        width: 25%;
+        margin: 100px 4%;
+        transition: .2s all ease-in-out;
+    }
+    .icons img {
+        width: 65%;
+        border-radius: 50px;
+        border: 8px solid white;
+        background-color: rgba(190, 190, 190,.5);
+    }
+    .third:nth-child(3) {
+        filter: grayscale(100%) contrast(150%);
+    }
+    .icons p {
+        margin-top: 10px;
+        color: white;
+        font-size: 26px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .third:hover {
+        transform: scale(1.1);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .third {
+        width: 20%;
+    }
+}
