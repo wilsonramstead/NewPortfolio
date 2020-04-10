@@ -2,39 +2,7 @@
 .contactWrapper {
     width: 100%;
     height: 100%;
-    // background: repeating-radial-gradient(
-    //     circle,
-    //     purple,
-    //     purple 10px,
-    //     #4b026f 10px, 
-    //     #4b026f 20px
-    //   );
-    // background: linear-gradient(45deg, black 0%, black 26%, transparent 26%), linear-gradient(-45deg, black 0%, black 27%, transparent 27%);
 }
-
-.module {
-    background: white;
-    border: 1px solid #ccc;
-    margin: 3%;
-    > h2 {
-      padding: 1rem;
-      margin: 0 0 0.5rem 0;
-    }
-    > p {
-      padding: 0 1rem;
-    }
-  }
-  
-  .stripe-7 {
-    color: white;
-    background: repeating-radial-gradient(
-      circle,
-      purple,
-      purple 10px,
-      #4b026f 10px, 
-      #4b026f 20px
-    );
-  }
 .displayHeader {
     color: white;
     font-size: 32px;
