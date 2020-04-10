@@ -29,7 +29,6 @@
 .section {
     width: 100%;
     min-height: 450px;
-    // background: #c4e6e3;
     background: #585858;
     padding: 10px;
     border-top: 3px solid black;
@@ -37,12 +36,9 @@
 }
 .textContent {
     text-align: left;
-    margin-left: 2%;
-    margin-top: 10px;
-    width: 45%;
+    // margin-left: 2%;
+    // margin-top: 10px;
     color: white;
-    display: inline-block;
-    vertical-align: top;
 }
 .backgroundWrapper {
     background: #e2e2e2;
@@ -72,17 +68,9 @@
 .sectionTitle {
     text-align: left;
     margin-left: 4%;
-    // margin-top: 10px;
-    // color: white;
     font-family: 'Raleway', sans-serif;
 
     // TEMP without media queries
-    h2 {
-        font-size: 26px;
-    }
-    h4 {
-        font-size: 22px;
-    }
 }
 .selectionList {
     margin-left: 4%;
@@ -108,4 +96,33 @@
     // font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
     margin: 12px auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .textContent {
+        text-align: left;
+        margin-left: 2%;
+        margin-top: 10px;
+        width: 100%;
+        display: block;
+    }
+    .sectionTitle {
+        text-align: center;
+        font-size: 26px;
+    }
+    .nav {
+        text-align: center;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .textContent {
+        text-align: left;
+        margin-left: 2%;
+        margin-top: 10px;
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
 }
