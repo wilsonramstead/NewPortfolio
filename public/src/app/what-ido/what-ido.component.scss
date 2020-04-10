@@ -19,7 +19,7 @@
         cursor: pointer;
     }
     .activeLink {
-        color: pink;
+        color: goldenrod;
     }
     li:hover {
         text-decoration: underline;
@@ -39,6 +39,7 @@
     text-align: left;
     margin-left: 2%;
     margin-top: 10px;
+    width: 45%;
     color: white;
     display: inline-block;
     vertical-align: top;
@@ -59,11 +60,15 @@
 .bulletList {
     color: white;
     li {
-        margin-top: 10px;
+        margin-bottom: 10px;
         list-style: square;
     }
 }
-
+.fwdImg {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
 .sectionTitle {
     text-align: left;
     margin-left: 4%;

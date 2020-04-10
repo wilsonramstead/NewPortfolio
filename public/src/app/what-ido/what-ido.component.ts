@@ -10,14 +10,18 @@ export class WhatIDoComponent implements OnInit {
   constructor() { }
 
   pageToShow: any
+  pageToShow2: any
   ngOnInit() {
     this.pageToShow = 'info';
+    this.pageToShow2 = 'info';
   }
 
   changePage(string) {
     this.pageToShow = string;
   }
-
+  changePage2(string) {
+    this.pageToShow2 = string;
+  }
   infoAlert(string) {
     // alert(string);
     if(string === 'html') {

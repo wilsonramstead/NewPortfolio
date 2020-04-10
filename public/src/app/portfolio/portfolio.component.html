@@ -39,7 +39,9 @@
             <div *ngIf="infoToShow === 'tech'" class="tech">
                 <p><strong style="color: black;">Front End: </strong> Html, Css, Javascript, Angular, Bootstrap</p>
                 <p><strong style="color: black;">Back End: </strong> Node.js, Express.js</p>
-                <p><strong style="color: black;">Database: </strong> No database</p>       
+                <p><strong style="color: black;">Database: </strong> No database</p>
+                <p><a target="_blank" href="https://github.com/wilsonramstead/Portfolio">Source Code</a></p>
+                
             </div>
         </div>
     </div>
@@ -72,16 +74,17 @@
         </div>
         <div class="descriptionBox">
             <ul>
-                <li><h4 (click)="showInfo('description')">Description</h4></li>
+                <li><h4 (click)="showInfo2('description')">Description</h4></li>
                 |
-                <li><h4 (click)="showInfo('tech')">Tech</h4></li>
+                <li><h4 (click)="showInfo2('tech')">Tech</h4></li>
             </ul>
             <hr>
-            <p *ngIf="infoToShow === 'description'">Website originally created for real personal use, and to save paper... But also as a way to further my experience with front-end styling and animations. Advanced backend logic applied through unique functions, from auto updating unassigned days to figuring out the specefic day of week per each month day - dynamically.</p>
-            <div *ngIf="infoToShow === 'tech'" class="tech">
+            <p *ngIf="infoToShow2 === 'description'">Website originally created for real personal use, and to save paper... But also as a way to further my experience with front-end styling and animations. Advanced backend logic applied through unique functions, from auto updating unassigned days to figuring out the specefic day of week per each month day - dynamically.</p>
+            <div *ngIf="infoToShow2 === 'tech'" class="tech">
                 <p><strong style="color: black;">Front End: </strong> Html, Css, Javascript, Angular, jQuery, Bootstrap</p>
                 <p><strong style="color: black;">Back End: </strong> Node.js, Express.js</p>
                 <p><strong style="color: black;">Database: </strong> MongoDB</p>
+                <p><a target="_blank" href="https://github.com/wilsonramstead/GoalTracker">Source Code</a></p>
             </div>
         </div>
     </div>
@@ -129,16 +132,17 @@
         </div>
         <div class="descriptionBox">
             <ul>
-                <li><h4 (click)="showInfo('description')">Description</h4></li>
+                <li><h4 (click)="showInfo3('description')">Description</h4></li>
                 |
-                <li><h4 (click)="showInfo('tech')">Tech</h4></li>
+                <li><h4 (click)="showInfo3('tech')">Tech</h4></li>
             </ul>
             <hr>
-            <p *ngIf="infoToShow === 'description'">A website where users can register an account and create posts to a public wall. Users can comment on other users posts, and visit their customized account page. Users have a network feature to list all users they are and are not connected to. Users can have private direct message conversations with other users, and create a private wall with a group of their connections.</p>
-            <div *ngIf="infoToShow === 'tech'" class="tech">
+            <p *ngIf="infoToShow3 === 'description'">A website where users can register an account and create posts to a public wall. Users can comment on other users posts, and visit their customized account page. Users have a network feature to list all users they are and are not connected to. Users can have private direct message conversations with other users, and create a private wall with a group of their connections.</p>
+            <div *ngIf="infoToShow3 === 'tech'" class="tech">
                 <p><strong style="color: black;">Front End: </strong> Html, Css, Javascript, jQuery, Bootstrap</p>
                 <p><strong style="color: black;">Back End: </strong> Asp.Net Core, Entity Framework</p>
                 <p><strong style="color: black;">Database: </strong> MySQL</p>
+                <p><a target="_blank" href="https://github.com/wilsonramstead/theWall">Source Code</a></p>
             </div>
         </div>
     </div>
