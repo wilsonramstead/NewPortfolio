@@ -14,9 +14,9 @@ export class WhatIDoComponent implements OnInit {
     this.pageToShow = 'info';
   }
 
-  // changePage(string) {
-  //   this.pageToShow = string;
-  // }
+  changePage(string) {
+    this.pageToShow = string;
+  }
 
   infoAlert(string) {
     // alert(string);
