@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-what-ido',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./what-ido.component.scss']
 })
 export class WhatIDoComponent implements OnInit {
+@Output() changePage3 = new EventEmitter();
 
   constructor() { }
 
@@ -14,6 +15,10 @@ export class WhatIDoComponent implements OnInit {
   ngOnInit() {
     this.pageToShow = 'info';
     this.pageToShow2 = 'info';
+  }
+
+  forChangePage3() {
+    this.changePage3.emit();
   }
 
   changePage(string) {

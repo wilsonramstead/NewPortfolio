@@ -34,6 +34,19 @@
     .resume {
         margin: 20px auto;
         text-align: center;
+        background: url("../../assets/escheresque2.png");
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        // padding-top: 10px;
+        min-height: 600px;
+        padding-bottom: 25px;
+        width: 100%;
+        h2 {
+            color: black;
+            height: 42px;
+            background: rgba(0,0,0,0.1);
+            border-bottom: 3px solid black;
+        }
     }
 }
 

@@ -11,7 +11,7 @@
     width: 90%;
     border-radius: 20px;
     margin-bottom: 20px;
-
+    margin-left: 10px;
     li {
         display: inline-block;
         margin: 0px 20px;
@@ -27,11 +27,17 @@
     }
 }
 
+.fakeLink {
+    color: #007bff;
+}
+.fakeLink:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
 .section {
     width: 100%;
     min-height: 450px;
     background: url("../../assets/escheresque2.png");
-    padding: 10px;
     border-top: 3px solid black;
     padding-bottom: 20px;
 }
@@ -62,9 +68,12 @@
 }
 .sectionTitle {
     text-align: left;
-    margin-left: 4%;
+    padding-left: 4%;
+    min-height: 42px;
     font-family: 'Raleway', sans-serif;
-
+    border-bottom: 3px solid black;
+    background: rgba(0,0,0,0.1);
+    font-size: 32px;
     // TEMP without media queries
 }
 .selectionList {
@@ -119,5 +128,8 @@
         width: 45%;
         display: inline-block;
         vertical-align: top;
+    }
+    .sectionTitle {
+        font-size: 32px;
     }
 }

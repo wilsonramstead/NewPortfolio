@@ -27,7 +27,7 @@
         <!-- <div class="column coolBackground2"></div> -->
         <div class="displayContainer">
             <app-about-me *ngIf="activePage === 'aboutMe'"></app-about-me>
-            <app-what-ido *ngIf="activePage === 'whatIDo'"></app-what-ido>
+            <app-what-ido *ngIf="activePage === 'whatIDo'" (changePage3)="changePage('portfolio')"></app-what-ido>
 
 
             <app-contact *ngIf="activePage === 'contact'"></app-contact>
