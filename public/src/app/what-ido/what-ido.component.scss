@@ -5,7 +5,8 @@
 }
 .nav {
     height: 40px;
-    background: rgba(0, 0, 0, 0.507);
+    // background: rgba(0, 0, 0, 0.507);
+    background: url("../../assets/escheresque_ste.png");
     border: 3px solid black;
     width: 90%;
     border-radius: 20px;
@@ -29,20 +30,14 @@
 .section {
     width: 100%;
     min-height: 450px;
-    background: #585858;
+    background: url("../../assets/escheresque2.png");
     padding: 10px;
     border-top: 3px solid black;
     padding-bottom: 20px;
 }
 .textContent {
     text-align: left;
-    // margin-left: 2%;
-    // margin-top: 10px;
-    color: white;
-}
-.backgroundWrapper {
-    background: #e2e2e2;
-    min-height: 100px;
+    color: black;
 }
 .innerDiv {
     border: 2px solid rgb(41, 41, 41);
@@ -54,7 +49,7 @@
     }
 }
 .bulletList {
-    color: white;
+    color: black;
     li {
         margin-bottom: 10px;
         list-style: square;

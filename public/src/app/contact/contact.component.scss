@@ -9,8 +9,8 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
     margin: 12px auto;
-    padding-bottom: 12px;
-    border-bottom: 3px solid black;
+    // padding-bottom: 12px;
+    // border-bottom: 3px solid black;
 }
 
 .wrapper {
@@ -18,14 +18,29 @@
 }
 .icons {
     text-align: center;
+    width: 100%;
+    // background: #c4e6e3;
+    background: url("../../assets/escheresque2.png");
+    padding: 10px;
+    border-top: 3px solid black;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    border-radius: 0% 0% 4% 4%;
+}
+.icons img {
+    border-radius: 50px;
+    border: 8px solid black;
+    background-color: rgba(15, 15, 15, 0.5);
 }
 @media only screen and (max-width: 480px) {
+    .icons {
+        min-height: 500px;
+    }
     .icons img {
         width: 50%;
         margin: 20px auto;
-        border-radius: 50px;
-        border: 8px solid white;
-        background-color: rgba(190, 190, 190,.5);
         display: block;
     }
     .icons img:nth-child(1) {
@@ -39,12 +54,12 @@
     }
     .icons p {
         margin-bottom: 80px;
-        color: white;
-        font-size: 26px;
-        font-family: 'Libre Baskerville', serif;
     } 
 }
 @media only screen and (min-width: 481px) {
+    .icons {
+        height: 500px;
+    }
     .third {
         display: inline-block;
         width: 25%;
@@ -53,18 +68,12 @@
     }
     .icons img {
         width: 65%;
-        border-radius: 50px;
-        border: 8px solid white;
-        background-color: rgba(190, 190, 190,.5);
     }
     .third:nth-child(3) {
         filter: grayscale(100%) contrast(150%);
     }
     .icons p {
         margin-top: 10px;
-        color: white;
-        font-size: 26px;
-        font-family: 'Libre Baskerville', serif;
     }
     .third:hover {
         transform: scale(1.1);

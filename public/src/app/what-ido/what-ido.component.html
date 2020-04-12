@@ -1,104 +1,103 @@
 
 <div class="wrapper">
-
     <h2 class="displayHeader">What I Do</h2>
-        <!-- <hr style="background: white;"> -->
-        <div class="backgroundWrapper">
-        <div class="section">
-            <h2 class="sectionTitle">Software Engineer - Big Data Support Engineer</h2>
-            <div class="nav">
-                <ul>
-                    <li *ngIf="pageToShow != 'info'" (click)="changePage('info')">Info</li>
-                    <li class="activeLink" *ngIf="pageToShow === 'info'">Info</li>
-                    <li *ngIf="pageToShow != 'stats'" (click)="changePage('stats')">My Stats</li>
-                    <li class="activeLink" *ngIf="pageToShow === 'stats'">My Stats</li>
-                </ul>
-            </div>
-            <!-- <h4 class="sectionTitle">Big Data Support Engineer</h4> -->
-            <div class="textContent">
-                <h4 *ngIf="pageToShow === 'info'" >What I Do</h4>
-                <hr *ngIf="pageToShow === 'info'" style="background: black;">
-                <ul class="bulletList" *ngIf="pageToShow === 'info'" >
-                    <li>Work with customer support tickets raised with Azure support, to debug and fix Data Factory errors.</li>
-                    <li>Managing and navigating cases to solve the customer’s errors/requests. Cases range from 1 to 40+ days. Requires meeting and working with the customer's team, collaborating between multiple internal service teams (network team, sql db team, etc…), and the azure product teams - until customer error is resolved.</li>
-                    <li><strong>Work with critical situation premier severity A cases with large business impacts.</strong></li>
-                </ul>
-            </div>
-            <div class="textContent">
-                <h4 *ngIf="pageToShow === 'info'" >What is Data Factory?</h4>
-                <hr *ngIf="pageToShow === 'info'" style="background: black;">
-                <ul class="bulletList" *ngIf="pageToShow === 'info'" >
-                    <li>Azure Data Factory is Azure's cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale.</li>
-                    <li>ETL and ELT processes, working with 90+ database connectors, piplines, pipeline activities, dataflows, dataflow activities, linked services, and integration runtimes.</li>
-                    <li><a target="_blank" href="https://azure.microsoft.com/en-us/services/data-factory/">Data Factory (product page)</a></li>
-                    <li><a target="_blank" href="https://docs.microsoft.com/en-us/azure/data-factory/introduction">Data Factory (Microsoft Docs)</a></li>
-                </ul>
-            </div>
-            <div class="textContent">
-                <h4 *ngIf="pageToShow === 'stats'">Current Stats</h4>
-                <hr *ngIf="pageToShow === 'stats'" style="background: black;">
-                <ul class="bulletList" *ngIf="pageToShow === 'stats'">
-                    <li><p>Closed cases: <strong style="color: black; background: rgb(0, 255, 255); padding: 2px;"> 68</strong>.</p></li>
-                    <li><p>Survey Count: <strong style="color: black; background: rgb(0, 255, 255); padding: 2px;">11 (eight 5 star, three 4 star)</strong>.</p></li>
-                </ul>
-            </div>
-            <div class="textContent">
-                <h4 *ngIf="pageToShow === 'stats'">Customer Reviews:</h4>
-                <hr *ngIf="pageToShow === 'stats'" style="background: black;">
-                <ul class="bulletList" *ngIf="pageToShow === 'stats'">
-                    <li><strong style="color: white;">5 star</strong> - "Thanks for the details. It is a pleasure working with you, as you provided all the required information (with reference document and screenshots) in the first response. That is a <strong>VERY RARE</strong> experience I had with Microsoft Support."</li>
-                    <li><strong style="color: white;">5 star </strong> - "(Wilson) was extremely helpful and coordinated communication between myself and multiple teams at MS."</li>
-                    <li><strong style="color: white;">5 star</strong>  - "We could not figure out the problem and it appeared to be a bug in the platform or browser type. (Wilson) was very responsive and quickly escalated the issue to the PG team. No RCA was communicated, but is not necessary, Concise and well formatted instructions were provided with excellent response times. I appreciate this level of support."</li>
-                    <li><strong style="color: white;">5 star</strong> - "Good!"</li>
-                </ul>
-            </div>
+    <div class="section">
+        <h2 class="sectionTitle">Software Engineer - Big Data Support Engineer</h2>
+        <div class="nav">
+            <ul>
+                <li *ngIf="pageToShow != 'info'" (click)="changePage('info')">Info</li>
+                <li class="activeLink" *ngIf="pageToShow === 'info'">Info</li>
+                <li *ngIf="pageToShow != 'stats'" (click)="changePage('stats')">My Stats</li>
+                <li class="activeLink" *ngIf="pageToShow === 'stats'">My Stats</li>
+            </ul>
         </div>
-        <div class="section">
-            <h2 class="sectionTitle">Full Stack Web Developement</h2>
-            <div class="nav">
-                <ul>
-                    <li *ngIf="pageToShow2 != 'info'" (click)="changePage2('info')">Info</li>
-                    <li class="activeLink" *ngIf="pageToShow2 === 'info'">Info</li>
-                    <li *ngIf="pageToShow2 != 'tech'" (click)="changePage2('tech')">My Tech</li>
-                    <li class="activeLink" *ngIf="pageToShow2 === 'tech'">My Tech</li>
-                </ul>
-            </div>
-            <div *ngIf="pageToShow2 === 'tech'" class="textContent">
-                <h4>My Technologies</h4>
-                <p><strong style="color: black;">Front End: </strong> <span class="infoAlerts" (click)="infoAlert('html')">HTML</span>, <span class="infoAlerts" (click)="infoAlert('css')">CSS</span>, <span class="infoAlerts" (click)="infoAlert('javascript')">JavaScript</span>, <span class="infoAlerts" (click)="infoAlert('angular')">Angular</span>, <span class="infoAlerts" (click)="infoAlert('jquery')">jQuery</span>.</p>
-                <p><strong style="color: black;">Back End: </strong> <span class="infoAlerts" (click)="infoAlert('node')">Node.js</span>, <span class="infoAlerts" (click)="infoAlert('express')">Express.js</span>, ASP.</p>
-                <p><strong style="color: black;">Database: </strong> <span class="infoAlerts" (click)="infoAlert('mysql')">MySQL</span>, <span class="infoAlerts" (click)="infoAlert('sqlite')">SQLite</span>, <span class="infoAlerts" (click)="infoAlert('mongodb')">MongoDB</span>.</p>
-                <p><strong style="color: black;">Languages: </strong> JavaScript (ES6), <span class="infoAlerts" (click)="infoAlert('python')">Python</span>, <span class="infoAlerts" (click)="infoAlert('c#')">C#</span>, CSS3, SCSS, HTML5, TypeScript, MySQL.</p>
-                <p><strong style="color: black;">Frameworks: </strong> Angular, Entity, Flask, Django, .NETCore, ASP.net.</p>
-            </div>
-            <div *ngIf="pageToShow2 === 'tech'" class="textContent">
-                <h4>What I Do</h4>
-                <p><strong style="color: black;">Front End: </strong> Responsive Layouts, Styling and Animations, Front End Architecture.</p>
-                <p><strong style="color: black;">Back End: </strong> MVC Architecture, Object Relational Mapping, Restful API.</p>
-                <p><strong style="color: black;">Database: </strong> Database design, SQL Databases, NoSQL Databases.</p>
-            </div>
-            <div *ngIf="pageToShow2 === 'info'" class="textContent">
-                <h4>What is full stack developement?</h4>
-                <p>A full stack web developer is a person who can develop both <strong>client</strong> and <strong>server</strong> software.</p>
-                <p>In Addition to mastering HTML and CSS, he/she also knows how to:</p>
-                <ul class="bulletList">
-                    <li>Program a <strong>browser</strong> (like using JavaScript, jQuery, Angular, or Vue).</li>
-                    <li>Program a <strong>server</strong> (like using PHP, ASP, Python, or Node).</li>
-                    <li>Program a <strong>database</strong> (like using SQL, SQLite, or MongoDB).</li>
-                </ul>
-                <p>Reference: <a target="_blank" href="https://www.w3schools.com/whatis/whatis_fullstack.asp">w3schools.com</a></p>
-                <h4 style="color: white; margin-left: 2%; margin-top: 50px;">See <a href="">Portfolio</a> for examples of this!</h4>
-            </div>
-            <div *ngIf="pageToShow2 === 'info'" class="textContent">
-                <p>Full Stack Web Developement involves developing and designing the following three layers:</p>
-                <ul class="bulletList">
-                    <li><strong>Front-End layer</strong> - browser (what the user can visually see on the screen).</li>
-                    <li><strong>Back-End layer</strong> - server (the backend server to handle all browser requests).</li>
-                    <li><strong>Database layer</strong> (to store user data + CRUD operations (create, read, update, delete) regarding accounts).</li>
-                </ul>
-                <img class="fwdImg" *ngIf="pageToShow2 === 'info'" src="../assets/fwdImg.png" alt="Web developer image">
-                <p>Reference: <a target="_blank" href="https://www.edureka.co/blog/how-to-become-a-full-stack-web-developer/">source article</a></p>
-            </div>
+        <!-- <h4 class="sectionTitle">Big Data Support Engineer</h4> -->
+        <div class="textContent">
+            <h4 *ngIf="pageToShow === 'info'" >What I Do</h4>
+            <hr *ngIf="pageToShow === 'info'" style="background: black;">
+            <ul class="bulletList" *ngIf="pageToShow === 'info'" >
+                <li>Work with customer support tickets raised with Azure support, to debug and fix Data Factory errors.</li>
+                <li>Managing and navigating cases to solve the customer’s errors/requests. Cases range from 1 to 40+ days. Requires meeting and working with the customer's team, collaborating between multiple internal service teams (network team, sql db team, etc…), and the azure product teams - until customer error is resolved.</li>
+                <li><strong>Work with critical situation premier severity A cases with large business impacts.</strong></li>
+            </ul>
+        </div>
+        <div class="textContent">
+            <h4 *ngIf="pageToShow === 'info'" >What is Data Factory?</h4>
+            <hr *ngIf="pageToShow === 'info'" style="background: black;">
+            <ul class="bulletList" *ngIf="pageToShow === 'info'" >
+                <li>Azure Data Factory is Azure's cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale.</li>
+                <li>ETL and ELT processes, working with 90+ database connectors, piplines, pipeline activities, dataflows, dataflow activities, linked services, and integration runtimes.</li>
+                <li><a target="_blank" href="https://azure.microsoft.com/en-us/services/data-factory/">Data Factory (product page)</a></li>
+                <li><a target="_blank" href="https://docs.microsoft.com/en-us/azure/data-factory/introduction">Data Factory (Microsoft Docs)</a></li>
+            </ul>
+        </div>
+        <div class="textContent">
+            <h4 *ngIf="pageToShow === 'stats'">Current Stats</h4>
+            <hr *ngIf="pageToShow === 'stats'" style="background: black;">
+            <ul class="bulletList" *ngIf="pageToShow === 'stats'">
+                <li><p>Closed cases: <strong style="color: black; background: rgb(0, 255, 255); padding: 2px;"> 68</strong>.</p></li>
+                <li><p>Survey Count: <strong style="color: black; background: rgb(0, 255, 255); padding: 2px;">11 (eight 5 star, three 4 star)</strong>.</p></li>
+            </ul>
+        </div>
+        <div class="textContent">
+            <h4 *ngIf="pageToShow === 'stats'">Customer Reviews:</h4>
+            <hr *ngIf="pageToShow === 'stats'" style="background: black;">
+            <ul class="bulletList" *ngIf="pageToShow === 'stats'">
+                <li><strong style="color: white;">5 star</strong> - "Thanks for the details. It is a pleasure working with you, as you provided all the required information (with reference document and screenshots) in the first response. That is a <strong>VERY RARE</strong> experience I had with Microsoft Support."</li>
+                <li><strong style="color: white;">5 star </strong> - "(Wilson) was extremely helpful and coordinated communication between myself and multiple teams at MS."</li>
+                <li><strong style="color: white;">5 star</strong>  - "We could not figure out the problem and it appeared to be a bug in the platform or browser type. (Wilson) was very responsive and quickly escalated the issue to the PG team. No RCA was communicated, but is not necessary, Concise and well formatted instructions were provided with excellent response times. I appreciate this level of support."</li>
+                <li><strong style="color: white;">5 star</strong> - "Good!"</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="sectionTitle">Full Stack Web Developement</h2>
+        <div class="nav">
+            <ul>
+                <li *ngIf="pageToShow2 != 'info'" (click)="changePage2('info')">Info</li>
+                <li class="activeLink" *ngIf="pageToShow2 === 'info'">Info</li>
+                <li *ngIf="pageToShow2 != 'tech'" (click)="changePage2('tech')">My Tech</li>
+                <li class="activeLink" *ngIf="pageToShow2 === 'tech'">My Tech</li>
+            </ul>
+        </div>
+        <div *ngIf="pageToShow2 === 'tech'" class="textContent">
+            <h4>My Technologies</h4>
+            <hr *ngIf="pageToShow2 === 'tech'" style="background: black;">
+            <p><strong style="color: black;">Front End: </strong> <span class="infoAlerts" (mouseover)="infoAlert('html')">HTML</span>, <span class="infoAlerts" (hover)="infoAlert('css')">CSS</span>, <span class="infoAlerts" (click)="infoAlert('javascript')">JavaScript</span>, <span class="infoAlerts" (click)="infoAlert('angular')">Angular</span>, <span class="infoAlerts" (click)="infoAlert('jquery')">jQuery</span>.</p>
+            <p><strong style="color: black;">Back End: </strong> <span class="infoAlerts" (click)="infoAlert('node')">Node.js</span>, <span class="infoAlerts" (click)="infoAlert('express')">Express.js</span>, ASP.</p>
+            <p><strong style="color: black;">Database: </strong> <span class="infoAlerts" (click)="infoAlert('mysql')">MySQL</span>, <span class="infoAlerts" (click)="infoAlert('sqlite')">SQLite</span>, <span class="infoAlerts" (click)="infoAlert('mongodb')">MongoDB</span>.</p>
+            <p><strong style="color: black;">Languages: </strong> JavaScript (ES6), <span class="infoAlerts" (click)="infoAlert('python')">Python</span>, <span class="infoAlerts" (click)="infoAlert('c#')">C#</span>, CSS3, SCSS, HTML5, TypeScript, MySQL.</p>
+            <p><strong style="color: black;">Frameworks: </strong> Angular, Entity, Flask, Django, .NETCore, ASP.net.</p>
+        </div>
+        <div *ngIf="pageToShow2 === 'tech'" class="textContent">
+            <h4>What I Do</h4>
+            <hr *ngIf="pageToShow2 === 'tech'" style="background: black;">
+            <p><strong style="color: black;">Front End: </strong> Responsive Layouts, Styling and Animations, Front End Architecture.</p>
+            <p><strong style="color: black;">Back End: </strong> MVC Architecture, Object Relational Mapping, Restful API.</p>
+            <p><strong style="color: black;">Database: </strong> Database design, SQL Databases, NoSQL Databases.</p>
+        </div>
+        <div *ngIf="pageToShow2 === 'info'" class="textContent">
+            <h4>What is full stack developement?</h4>
+            <hr *ngIf="pageToShow2 === 'info'" style="background: black;">
+            <p>A full stack web developer is a person who can develop both <strong>client</strong> and <strong>server</strong> software.</p>
+            <p>In Addition to mastering HTML and CSS, he/she also knows how to:</p>
+            <ul class="bulletList">
+                <li>Program a <strong>browser</strong> (like using JavaScript, jQuery, Angular, or Vue).</li>
+                <li>Program a <strong>server</strong> (like using PHP, ASP, Python, or Node).</li>
+                <li>Program a <strong>database</strong> (like using SQL, SQLite, or MongoDB).</li>
+            </ul>
+            <p>Reference: <a target="_blank" href="https://www.w3schools.com/whatis/whatis_fullstack.asp">w3schools.com</a></p>
+            <h4 style="color: white; margin-left: 2%; margin-top: 50px;">See <a href="">Portfolio</a> for examples of this!</h4>
+        </div>
+        <div *ngIf="pageToShow2 === 'info'" class="textContent">
+            <p>Full Stack Web Developement involves developing and designing the following three layers:</p>
+            <ul class="bulletList">
+                <li><strong>Front-End layer</strong> - browser (what the user can visually see on the screen).</li>
+                <li><strong>Back-End layer</strong> - server (the backend server to handle all browser requests).</li>
+                <li><strong>Database layer</strong> (to store user data + CRUD operations (create, read, update, delete) regarding accounts).</li>
+            </ul>
+            <img class="fwdImg" *ngIf="pageToShow2 === 'info'" src="../assets/fwdImg.png" alt="Web developer image">
+            <p>Reference: <a target="_blank" href="https://www.edureka.co/blog/how-to-become-a-full-stack-web-developer/">source article</a></p>
         </div>
     </div>
 </div>

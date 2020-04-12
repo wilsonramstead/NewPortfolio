@@ -13,15 +13,9 @@
 }
 .section {
     width: 100%;
-    height: 500px;
     // background: #c4e6e3;
-    background: #585858;
-    padding: 10px;
+    background: url("../../assets/escheresque2.png");
     border-top: 3px solid black;
-}
-.sectionTitle {
-    font-family: 'Raleway', sans-serif;
-    color: white;
 }
 .carousel {
     width: 40%;
@@ -42,40 +36,109 @@
     vertical-align: top;
     width: 50%;
     margin-left: 3%;
-    color: white;
+    color: black;
     // .activeLink {
     //     color: #b8b8b8;
     // }
+    font-family: 'Noto Serif', serif;
+
     ul {
-        text-align: left;
         li {
-            display: inline-block;
             list-style: none;
-            margin: 5px 15px;
             cursor: pointer;
         }
-
-    }
-
-    p {
-        font-size: 22px;
-        font-family: 'Noto Serif', serif;
-        text-align: left;
     }
 }
 
 .sectionTitle {
-    text-align: left;
-    margin-left: 4%;
-    // margin-top: 10px;
-    // color: white;
+    color: black;
     font-family: 'Raleway', sans-serif;
+}
 
-    // TEMP without media queries
-    h2 {
-        font-size: 26px;
+@media only screen and (max-width: 480px) {
+
+    .section {
+        min-height: 500px;
     }
-    h4 {
+    .sectionTitle {
+        text-align: center;
         font-size: 22px;
+    }
+    .carousel {
+        width: 100%;
+        // margin: 20px 5%;
+        margin: 0px auto;
+        display: block;
+        ngb-carousel {
+            width: 80%;
+        }
+    }
+    .descriptionBox {
+        width: 100%;
+        ul {
+            // text-align: left;
+            width: 100%;
+            display: block;
+            margin: 10px auto;
+            text-align: left;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .section {
+        height: 500px;
+    }
+    .descriptionBox {
+        h4 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 18px;
+            text-align: left;
+        }
+
+        ul {
+            text-align: left;
+            li {
+                display: inline-block;
+                margin: 5px 15px;
+            }
+        }
+    }
+    .sectionTitle {
+        height: 42px;
+        text-align: left;
+        padding-left: 4%;
+        font-size: 24px;
+        border-bottom: 3px solid black;
+        background: rgba(0,0,0,0.1);
+        margin-bottom: 25px;
+    }
+    .carousel {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        ngb-carousel {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .descriptionBox {
+        h4 {
+            font-size: 26px;
+        }
+        p {
+            font-size: 22px;
+        }
+    }
+    .sectionTitle {
+        font-size: 32px;
     }
 }
