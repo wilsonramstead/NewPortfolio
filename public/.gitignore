@@ -23,6 +23,12 @@ speed-measure-plugin.json
 .settings/
 *.sublime-workspace
 
+/DS_Store
+./DS_Store
+/package-lock.json
+/VagrantFile
+/bower_components/
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
