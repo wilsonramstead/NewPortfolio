@@ -35,7 +35,6 @@
     display: inline-block;
     vertical-align: top;
     width: 50%;
-    margin-left: 3%;
     color: black;
     // .activeLink {
     //     color: #b8b8b8;
@@ -56,8 +55,11 @@
     border-bottom: 3px solid black;
     background: rgba(0,0,0,0.1);
     margin-bottom: 25px;
-    height: 42px;
     font-size: 24px;
+}
+.middlePipe {
+    display: inline-block;
+    margin: 0px 10px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -67,6 +69,8 @@
     }
     .sectionTitle {
         text-align: center;
+        height: 55px;
+        padding-top: 10px;
     }
     .carousel {
         width: 100%;
@@ -78,17 +82,23 @@
         }
     }
     .descriptionBox {
-        width: 100%;
+        width: 90%;
         ul {
             // text-align: left;
             width: 100%;
             display: block;
             margin: 10px auto;
             text-align: left;
+            margin-left: 35px;
+            padding: 0px;
             li {
                 display: inline-block;
             }
         }
+    }
+    .tech {
+        text-align: left;
+        margin-left: 20px;
     }
 }
 
@@ -97,6 +107,7 @@
         height: 500px;
     }
     .descriptionBox {
+        margin-left: 3%;
         h4 {
             font-size: 22px;
         }
@@ -116,6 +127,8 @@
     .sectionTitle {
         text-align: left;
         padding-left: 4%;
+        height: 50px;
+        padding-top: 5px;
     }
     .carousel {
         width: 40%;
