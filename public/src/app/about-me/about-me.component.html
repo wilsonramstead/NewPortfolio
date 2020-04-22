@@ -1,3 +1,4 @@
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
 <div class="aboutWrapper">
     <div class="intro">
@@ -12,8 +13,9 @@
         </div>
         <div class="resume">
             <h2>Resume</h2>
+            <p><a target="_blank" href="../assets/images/Resume.pdf">Click to view</a></p>
             <!-- <embed src="../assets/images/Resume.pdf" type="application/pdf" width="80%" height="600px"> -->
-            <object data="../assets/images/Resume.pdf" type="application/pdf" width="80%" height="600px">
+            <object data="../assets/images/Resume.pdf" id="iframe"type="application/pdf" width="80%" height="600px">
             <p>Your web browser doesn't have a PDF plugin.
             Instead you can <a target="_blank" href="../assets/images/Resume.pdf">click here to
             view.</a></p>
@@ -22,3 +24,11 @@
     </div>
     <hr>
 </div>
+
+<script>
+$("#iframe").contents().find("body").css({
+    "height": "100%",
+    "overflow": "auto", 
+    "-webkit-overflow-scrolling": "touch"
+});
+</script>
