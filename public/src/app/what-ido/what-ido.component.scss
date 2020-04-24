@@ -7,7 +7,9 @@
     height: 40px;
     // background: rgba(0, 0, 0, 0.507);
     background: url("../../assets/escheresque_ste.png");
-    border: 3px solid black;
+    // border: 3px solid black;
+    border-left: 3px solid #6d94ff;
+    border-top: 3px solid #6d94ff;
     width: 90%;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -20,7 +22,7 @@
         cursor: pointer;
     }
     .activeLink {
-        color: goldenrod;
+        color: #6d94ff;
     }
     li:hover {
         text-decoration: underline;

@@ -31,11 +31,16 @@
         // background: silver;
         display: inline-block;
         vertical-align: top;
-
+        background: rgba($color: #494949, $alpha: .6);
+        padding: 10px;
+        border: 5px solid white;
         p {
             font-family: 'Noto Serif', serif;
             color: whitesmoke;
             // text-shadow: 1px 1px black;
+            a {
+                color: rgb(0, 255, 255);
+            }
         }
     }
     .resume {
