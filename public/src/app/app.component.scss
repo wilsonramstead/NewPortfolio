@@ -14,6 +14,12 @@
     // background: url("../assets/escheresque2.png");
     background: url("../assets/escheresque_ste.png");
 
+    .mainHR {
+        height: 1px; 
+        background:white; 
+        margin: 0px auto; 
+        margin-bottom: 20px;
+    }
     
     .innerWrapper {
         height: 100%;
@@ -104,6 +110,10 @@
     }
     .mainHeader h1 {
         font-size: 2rem;
+        padding: 9px 0px;
+    }
+    .mainHR {
+        width: 80%;
     }
 }
 
@@ -119,5 +129,8 @@
     }
     .mainHeader h1 {
         font-size: 2.5rem;
+    }
+    .mainHR {
+        width: 28%;
     }
 }
