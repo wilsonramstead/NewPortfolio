@@ -19,20 +19,28 @@
 .icons {
     text-align: center;
     width: 100%;
-    // background: #c4e6e3;
-    background: url("../../assets/escheresque2.png");
+    // background: url("../../assets/escheresque2.png");
+    background: url("../../assets/beach.jpeg");
+    background-position-y: center;
+    background-size: cover;
     padding: 10px;
     border-top: 3px solid black;
-    color: black;
+    color: white;
     font-family: 'Raleway', sans-serif;
-    // font-family: 'Open Sans', sans-serif;
     font-size: 26px;
-    border-radius: 0% 0% 4% 4%;
+    p {
+        font-weight: bold;
+    }
 }
 .icons img {
     border-radius: 50px;
-    border: 8px solid black;
-    background-color: rgba(15, 15, 15, 0.5);
+    border: 8px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.icons .imgCreds a {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
 }
 @media only screen and (max-width: 480px) {
     .icons {
@@ -55,6 +63,17 @@
     .icons p {
         margin-bottom: 80px;
     } 
+    .icons .imgCreds {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .imgCreds {
+        margin: 20px auto;
+        margin-bottom: unset;
+        padding-bottom: 20px;
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 481px) {
     .icons {
@@ -77,6 +96,9 @@
     }
     .third:hover {
         transform: scale(1.1);
+    }
+    .imgCreds {
+        margin-left: 90%;
     }
 }
 @media only screen and (min-width: 1024px) {
