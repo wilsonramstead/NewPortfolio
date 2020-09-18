@@ -1,7 +1,6 @@
 .wrapper {
     width: 100%;
     margin: 0px auto;
-    text-align: center;
 }
 .displayHeader {
     color: white;
@@ -64,7 +63,9 @@
 }
 
 @media only screen and (max-width: 480px) {
-
+    .wrapper {
+        text-align: center;
+    }
     .section {
         min-height: 500px;
     }
@@ -105,7 +106,7 @@
 
 @media only screen and (min-width: 481px) {
     .section {
-        height: 500px;
+        min-height: 500px;
     }
     .descriptionBox {
         margin-left: 3%;
@@ -135,8 +136,14 @@
         width: 40%;
         display: inline-block;
         vertical-align: top;
+        margin-left: 20px;
         ngb-carousel {
             width: 100%;
+        }
+    }
+    .wrapper {
+        .jumpmanVid {
+            text-align: right;
         }
     }
 }
